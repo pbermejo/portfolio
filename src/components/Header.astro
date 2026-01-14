@@ -1,0 +1,19 @@
+---
+import ThemeToggle from './ThemeToggle.astro';
+---
+<header class="sticky top-0 z-50 flex justify-center items-center py-4 px-4 w-full bg-paper-light/80 dark:bg-charcoal-dark/80 backdrop-blur-md border-b-2 border-transparent transition-colors duration-300">
+  <div class="flex items-center gap-6 max-w-5xl w-full justify-center relative">
+    <nav>
+      <ul class="flex space-x-6 text-sm font-bold">
+        <li><a href="#about" class="text-paper-dark dark:text-charcoal-light hover:text-paper-light hover:bg-paper-dark dark:hover:text-charcoal-dark dark:hover:bg-charcoal-light px-1 transition-none">Perfil</a></li>
+        <li><a href="#experience" class="text-paper-dark dark:text-charcoal-light hover:text-paper-light hover:bg-paper-dark dark:hover:text-charcoal-dark dark:hover:bg-charcoal-light px-1 transition-none">Experiencia</a></li>
+        <li><a href="#education" class="text-paper-dark dark:text-charcoal-light hover:text-paper-light hover:bg-paper-dark dark:hover:text-charcoal-dark dark:hover:bg-charcoal-light px-1 transition-none">Formación</a></li>
+        <li><a href="#skills" class="text-paper-dark dark:text-charcoal-light hover:text-paper-light hover:bg-paper-dark dark:hover:text-charcoal-dark dark:hover:bg-charcoal-light px-1 transition-none">Habilidades</a></li>
+        <li><a href="mailto:pbermejo.dev@gmail.com" class="text-paper-dark dark:text-charcoal-light hover:text-paper-light hover:bg-paper-dark dark:hover:text-charcoal-dark dark:hover:bg-charcoal-light px-1 transition-none">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="absolute right-0">
+        <ThemeToggle />
+    </div>
+  </div>
+</header>

@@ -1,0 +1,144 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Section from '../components/Section.astro';
+import ExperienceItem from '../components/ExperienceItem.astro';
+import SkillsChart from '../components/SkillsChart.astro';
+import Attributes from '../components/Attributes.astro';
+import CTA from '../components/CTA.astro';
+import Greeting from '../components/Greeting.astro';
+import data from '../data/data.json';
+
+const { personalInfo, experience, education, skills, skillsChart, attributes, about, contact } = data;
+---
+
+<Layout title={`${personalInfo.name} - ${personalInfo.title}`}>
+  <Greeting 
+    greeting={personalInfo.greeting}
+    name={personalInfo.name}
+    shortDescription={personalInfo.shortDescription}
+    email={personalInfo.email}
+    linkedin={personalInfo.linkedin}
+  />
+
+  <Section id="experience" title="Experiencia">
+      <div class="space-y-10 relative border-l-2 border-dashed border-paper-mid/30 dark:border-charcoal-mid/30 ml-3 pl-8">
+        {experience.slice(0, 4).map((job) => (
+          <ExperienceItem {...job} isRecent={true} showDescription={true} />
+        ))}
+
+        {experience.length > 4 && (
+             <>
+                <div id="experience-more" class="hidden space-y-10">
+                    {experience.slice(4).map((job) => (
+                      <ExperienceItem {...job} isRecent={false} showDescription={false} />
+                    ))}
+                </div>
+                <button 
+                    type="button" 
+                    class="text-paper-tint dark:text-charcoal-tint font-bold text-sm mt-8 hover:underline cursor-pointer bg-transparent border-none p-0 toggle-btn"
+                    data-target="experience-more"
+                >
+                    Ver trayectoria anterior (2007 - 2012: Consolidación técnica y diseño)
+                </button>
+            </>
+        )}
+      </div>
+  </Section>
+
+  <Section id="about" title="Perfil">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start mb-12">
+        <div class="w-full">
+          <img 
+            src="/avatar.jpeg" 
+            alt={personalInfo.name}
+            class="rounded-xl grayscale hover:grayscale-0 transition-all duration-500 shadow-lg border border-paper-mid/20 dark:border-charcoal-mid/20 w-full h-auto object-cover aspect-square"
+          />
+        </div>
+        <div class="prose dark:prose-invert max-w-none text-paper-mid dark:text-charcoal-mid leading-relaxed text-lg">
+          <SkillsChart data={skillsChart} />
+        </div>
+      </div>
+      <p class="mb-6">{about.p1}</p>
+    
+    <Attributes attributes={attributes} />
+  </Section>
+
+  <Section id="education" title="Formación">
+      <div class="space-y-8">
+        {Object.entries(education).map(([category, items]) => (
+          <div>
+             <h3 class="text-2xl font-bold text-paper-tint dark:text-charcoal-tint mb-4 mt-2">{category.replace(']', '')}</h3>
+             <div class="space-y-6">
+                {items.map((edu) => (
+                  <div>
+                    <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-1">
+                      <h4 class="text-lg font-semibold text-paper-dark dark:text-charcoal-light">
+                        {edu.degree}
+                      </h4>
+                      <span class="text-paper-mid dark:text-charcoal-mid font-medium">{edu.year}</span>
+                    </div>
+                    <p class="text-paper-mid dark:text-charcoal-mid">{edu.school} {edu.location && <span class="text-paper-mid dark:text-charcoal-mid text-base font-normal">· {edu.location}</span>}</p>
+                  </div>
+                ))}
+            </div>
+          </div>
+        ))}
+      </div>
+  </Section>
+
+  <Section id="skills" title="Habilidades">
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {Object.entries(skills).map(([category, { description, items }]) => (
+          <div>
+            <h3 class="text-xl font-semibold text-paper-tint dark:text-charcoal-tint mb-2">{category}</h3>
+            <p class="text-sm text-paper-mid dark:text-charcoal-mid mb-3 leading-relaxed">
+                {description}
+            </p>
+            <div class="flex flex-wrap gap-2">
+              {Array.isArray(items) && items.map((skill) => (
+                <span class={`px-3 py-1 rounded-md text-sm font-medium border transition-all duration-300 ${
+                  skill.highlight 
+                    ? 'bg-paper-dark/30 dark:bg-charcoal-dark/30 border-paper-mid dark:border-charcoal-mid/60 text-paper-dark dark:text-charcoal-light' 
+                    : 'bg-paper-dark/10 dark:bg-charcoal-dark/10 border-paper-mid/10 dark:border-charcoal-mid/10 text-paper-mid dark:text-charcoal-mid'
+                }`}>
+                  {skill.name}
+                </span>
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+      
+  </Section>
+
+  <CTA 
+      phrase={personalInfo.cta} 
+      email={personalInfo.email} 
+      linkedin={personalInfo.linkedin} 
+    />
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const buttons = document.querySelectorAll('.toggle-btn');
+        const [seeMore, seeLess] = [
+          'Ver trayectoria anterior (2007 - 2012: Consolidación técnica y diseño)',
+          'Ver trayectoria más reciente (2012 - Actualidad)'
+        ]
+        
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                const targetId = button.getAttribute('data-target');
+                if (targetId) {
+                    const content = document.getElementById(targetId);
+                    
+                    if (content) {
+                        content.classList.toggle('hidden');
+                        button.textContent = content.classList.contains('hidden') ? seeMore : seeLess;
+                    }
+                }
+            });
+        });
+    });
+</script>
+</Layout>

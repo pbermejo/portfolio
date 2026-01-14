@@ -1,0 +1,21 @@
+---
+interface Props {
+  attributes: Record<string, string>;
+}
+
+const { attributes } = Astro.props;
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
+  {Object.entries(attributes).map(([title, description]) => (
+    <div class="p-5 rounded-lg border border-paper-mid/20 dark:border-charcoal-mid/20 bg-paper-light/30 dark:bg-charcoal-dark/30 hover:border-paper-tint/50 dark:hover:border-charcoal-tint/50 transition-colors duration-300">
+      <h3 class="text-lg font-bold text-paper-dark dark:text-charcoal-light mb-2 flex items-center gap-2">
+        <span class="w-1.5 h-1.5 rounded-full bg-paper-tint dark:bg-charcoal-tint"></span>
+        {title}
+      </h3>
+      <p class="text-sm text-paper-mid dark:text-charcoal-mid leading-relaxed font-medium">
+        {description}
+      </p>
+    </div>
+  ))}
+</div>

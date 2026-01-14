@@ -1,0 +1,38 @@
+---
+import ContactButtons from './ContactButtons.astro';
+
+interface Props {
+  greeting: string;
+  name: string;
+  shortDescription: {
+    t1: string;
+    t2: string;
+    t3: string;
+  };
+  email: string;
+  linkedin: string;
+}
+
+const { greeting, name, shortDescription, email, linkedin } = Astro.props;
+---
+
+<section class="py-20 md:py-32">
+  <div class="flex items-center gap-4 mb-6">
+    <img 
+      src="/avatar.jpeg" 
+      alt={name}
+      class="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-paper-tint dark:border-charcoal-tint shadow-sm grayscale hover:grayscale-0 transition-all duration-300"
+    />
+    <h1 class="text-4xl md:text-5xl font-bold text-paper-dark dark:text-charcoal-light tracking-tight">
+      {greeting}
+    </h1>
+  </div>
+  
+  <p class="text-2xl text-paper-dark dark:text-charcoal-light max-w-2xl leading-relaxed mb-12">
+    <span>{shortDescription.t1} </span>
+    <span class="text-paper-tint dark:text-charcoal-tint font-bold">{shortDescription.t2} </span>
+    <span>{shortDescription.t3}</span>      
+  </p>
+
+  <ContactButtons email={email} linkedin={linkedin} />
+</section>

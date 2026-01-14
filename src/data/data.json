@@ -1,0 +1,370 @@
+{
+    "personalInfo": {
+        "name": "Pablo Bermejo",
+        "title": "Full Stack Developer & E-commerce Specialist de Ourense, España",
+        "greeting": "Hola, soy Pablo Bermejo",
+        "tagline": "20 años uniendo tecnología, diseño y producto.",
+        "shortDescription": {
+            "t1": "20 años de experiencia.",
+            "t2": "Full Stack Developer & E-commerce Specialist de Ourense, España.",
+            "t3": "Especialista en E-commerce y Producto"
+        },
+        "email": "pbermejo.dev@gmail.com",
+        "linkedin": "https://www.linkedin.com/in/bermejodev",
+        "cta": "¿Buscas un perfil que entienda tanto el código como tu modelo de negocio? Hablemos."
+    },
+    "about": {
+        "p1": "Especialista en Producto Digital y E-commerce. Con 20 años de experiencia, integro desarrollo Full Stack y marketing online para crear experiencias de venta de alto rendimiento donde el diseño, la tecnología y las métricas trabajan en sintonía.",
+        "p2": ""
+    },
+    "experience": [
+        {
+            "role": "PHP PaaS Developer Consultant",
+            "company": "Redegal S.A.",
+            "period": "2022 - Actualidad",
+            "location": "Ourense",
+            "description": "Consultoría técnica y desarrollo especializado en soluciones PaaS para grandes clientes de E-commerce. Enfoque en arquitectura escalable, optimización de rendimiento y despliegue de soluciones robustas orientadas a negocio."
+        },
+        {
+            "role": "Desarrollador Full Stack",
+            "company": "Dinahosting.com",
+            "period": "2017 - 2020",
+            "location": "Santiago de Compostela",
+            "description": "Desarrollo y mantenimiento de herramientas críticas de panel de control y servicios de infraestructura. Trabajo en entornos de alta disponibilidad, uniendo lógica de backend con interfaces de usuario eficientes."
+        },
+        {
+            "role": "Responsable Front End",
+            "company": "Comunitae.com",
+            "period": "2013 - 2017",
+            "location": "Madrid",
+            "description": "Liderazgo del área Front End en una plataforma pionera de Fintech (Crowdlending). Responsable de la arquitectura visual, mejora de la experiencia de usuario (UX) y optimización de flujos de conversión de clientes."
+        },
+        {
+            "role": "Responsable Front End",
+            "company": "Compring.com / Boatius.com (Viko Group)",
+            "period": "2012 - 2013",
+            "location": "Vigo",
+            "description": "Desarrollo de interfaces para plataformas de E-commerce en un grupo especializado en marketing digital. Implementación de diseños centrados en la venta y la interacción del usuario."
+        },
+        {
+            "role": "Desarrollador Front End",
+            "company": "Everis",
+            "period": "2012",
+            "location": "A Coruña",
+            "description": "Participación en proyectos corporativos de gran escala, asegurando estándares de calidad en el desarrollo de interfaces y maquetación avanzada."
+        },
+        {
+            "role": "Desarrollador Front End",
+            "company": "Uniway Technologies",
+            "period": "2010 - 2011",
+            "location": "Madrid",
+            "description": "Desarrollo frontend y adaptación de soluciones web para clientes corporativos, con enfoque en usabilidad y compatibilidad."
+        },
+        {
+            "role": "Desarrollador Front End",
+            "company": "Boot",
+            "period": "2009",
+            "location": "Madrid",
+            "description": "Implementación técnica de proyectos digitales creativos, trabajando en estrecha colaboración con equipos de diseño."
+        },
+        {
+            "role": "Diseñador-maquetador",
+            "company": "IDEL",
+            "period": "2007 - 2009",
+            "location": "Madrid",
+            "description": "Transición del diseño visual al desarrollo web, especializándome en maquetación técnica y estándares web."
+        },
+        {
+            "role": "Diseñador gráfico (Beca Leonardo da Vinci)",
+            "company": "Studiobox",
+            "period": "2007",
+            "location": "Viseu (Portugal)",
+            "description": "Desarrollo de identidad visual y piezas gráficas en un entorno internacional, sentando las bases de mi visión estética y de comunicación."
+        }
+    ],
+    "education": {
+        "Área Desarrollo & Arquitectura": [
+            {
+                "degree": "Técnico Superior en Desarrollo de App Multiplataforma (DAM)",
+                "school": "Ministerio de Educación, FP y Deportes (Modalidad Dual)",
+                "year": "2020 - 2022",
+                "description": "Formación reglada técnica con enfoque en desarrollo moderno."
+            },
+            {
+                "degree": "Especialización en Clean Code y React",
+                "school": "Clúster TIC de Galicia",
+                "year": "2022",
+                "description": "Enfoque en calidad de código y arquitecturas frontend escalables."
+            },
+            {
+                "degree": "Ecosistema de Desarrollo Moderno (Certificaciones Técnicas)",
+                "school": "Oracle, Udemy, IEI Universidad Alicante",
+                "year": "2020 - 2021",
+                "description": "Administración BBDD MySQL, JavaScript ES6+, VueJS, Java Foundations y Desarrollo Web."
+            },
+            {
+                "degree": "Diseñador Web y Multimedia (El inicio)",
+                "school": "Forga + Consellería de Traballo",
+                "year": "2006",
+                "location": "Ourense"
+            }
+        ],
+        "Área Producto & Marketing Online]": [
+            {
+                "degree": "Máster Ejecutivo en Innovación",
+                "school": "EOI (Escuela de Organización Industrial)",
+                "year": "2015",
+                "location": "Madrid"
+            },
+            {
+                "degree": "Licenciado en Publicidad y Relaciones Públicas",
+                "school": "Universidad de Vigo",
+                "year": "2001 - 2006",
+                "location": "Pontevedra"
+            },
+            {
+                "degree": "Estrategia Digital y Diseño Eficaz",
+                "school": "IAB Google + Universidad de Murcia",
+                "year": "2009 - 2014",
+                "description": "Marketing Digital y Diseño de Webs orientadas a resultados."
+            }
+        ]
+    },
+    "skills": {
+        "Desarrollo & Arquitectura": {
+            "description": "Enfoque en la creación de aplicaciones robustas y escalables utilizando stacks modernos como Next.js, React y TypeScript, combinados con una sólida base en PHP/Laravel y arquitecturas de datos SQL/NoSQL.",
+            "items": [
+                {
+                    "name": "JavaScript (ES6+)",
+                    "highlight": true
+                },
+                {
+                    "name": "TypeScript",
+                    "highlight": true
+                },
+                {
+                    "name": "ReactJS",
+                    "highlight": true
+                },
+                {
+                    "name": "NextJS",
+                    "highlight": true
+                },
+                {
+                    "name": "SolidJS",
+                    "highlight": false
+                },
+                {
+                    "name": "Astro",
+                    "highlight": true
+                },
+                {
+                    "name": "PHP",
+                    "highlight": true
+                },
+                {
+                    "name": "Laravel",
+                    "highlight": true
+                },
+                {
+                    "name": "Python",
+                    "highlight": false
+                },
+                {
+                    "name": "SQL",
+                    "highlight": true
+                },
+                {
+                    "name": "NoSQL",
+                    "highlight": false
+                },
+                {
+                    "name": "HTML5",
+                    "highlight": false
+                },
+                {
+                    "name": "CSS/SCSS",
+                    "highlight": false
+                }
+            ]
+        },
+        "E-commerce Ecosystem": {
+            "description": "Especialista en plataformas de venta online. Capacidad para implementar soluciones personalizadas y arquitecturas Headless que priorizan la velocidad de carga y la conversión.",
+            "items": [
+                {
+                    "name": "Prestashop",
+                    "highlight": true
+                },
+                {
+                    "name": "Shopify",
+                    "highlight": true
+                },
+                {
+                    "name": "Wordpress / WooCommerce",
+                    "highlight": true
+                },
+                {
+                    "name": "Headless E-commerce",
+                    "highlight": true
+                }
+            ]
+        },
+        "UI & Design Systems": {
+            "description": "Uso de Figma y sistemas de diseño avanzados para garantizar interfaces impecables, accesibles y consistentes.",
+            "items": [
+                {
+                    "name": "Tailwind CSS",
+                    "highlight": true
+                },
+                {
+                    "name": "Shadcn UI",
+                    "highlight": true
+                },
+                {
+                    "name": "MUI",
+                    "highlight": false
+                },
+                {
+                    "name": "Chakra UI",
+                    "highlight": false
+                },
+                {
+                    "name": "Bootstrap",
+                    "highlight": false
+                },
+                {
+                    "name": "Figma",
+                    "highlight": true
+                }
+            ]
+        },
+        "Infraestructura & DevOps": {
+            "description": "Gestión del ciclo de vida de la aplicación y automatización de despliegues para garantizar integraciones continuas seguras y eficientes.",
+            "items": [
+                {
+                    "name": "Docker",
+                    "highlight": true
+                },
+                {
+                    "name": "Ansible",
+                    "highlight": false
+                },
+                {
+                    "name": "Bash",
+                    "highlight": false
+                },
+                {
+                    "name": "Git / GitFlow",
+                    "highlight": true
+                },
+                {
+                    "name": "API REST",
+                    "highlight": true
+                },
+                {
+                    "name": "GitHub Actions",
+                    "highlight": true
+                },
+                {
+                    "name": "Jenkins",
+                    "highlight": false
+                },
+                {
+                    "name": "Vercel",
+                    "highlight": true
+                },
+                {
+                    "name": "Netlify",
+                    "highlight": false
+                }
+            ]
+        },
+        "Estrategia de Producto & IA": {
+            "description": "Mentalidad orientada a resultados (Product Mindset) e integración de IA generativa para optimizar tiempos de desarrollo y calidad de entrega.",
+            "items": [
+                {
+                    "name": "AI Assisted Development (ChatGPT, Gemini)",
+                    "highlight": true
+                },
+                {
+                    "name": "Metodologías Ágiles",
+                    "highlight": false
+                },
+                {
+                    "name": "Product Mindset",
+                    "highlight": true
+                }
+            ]
+        },
+        "Calidad & Estándares": {
+            "description": "Compromiso con la excelencia técnica a través de Clean Code, estándares W3C y accesibilidad WCAG.",
+            "items": [
+                {
+                    "name": "W3C Standards",
+                    "highlight": false
+                },
+                {
+                    "name": "Accesibilidad Web (WCAG)",
+                    "highlight": true
+                },
+                {
+                    "name": "Clean Code",
+                    "highlight": true
+                },
+                {
+                    "name": "SEO Técnico",
+                    "highlight": true
+                }
+            ]
+        },
+        "Idiomas": {
+            "description": "Competencia lingüística para entornos de trabajo nacionales e internacionales.",
+            "items": [
+                {
+                    "name": "Español (Nativo)",
+                    "highlight": false
+                },
+                {
+                    "name": "Gallego (Nativo - CELGA 4)",
+                    "highlight": false
+                },
+                {
+                    "name": "Inglés (B1)",
+                    "highlight": false
+                },
+                {
+                    "name": "Portugués (Competencia profesional)",
+                    "highlight": false
+                }
+            ]
+        }
+    },
+    "skillsChart": [
+        {
+            "label": "Arquitectura & Code",
+            "value": 95
+        },
+        {
+            "label": "E-commerce",
+            "value": 95
+        },
+        {
+            "label": "Soft Skills",
+            "value": 80
+        },
+        {
+            "label": "Product Mindset",
+            "value": 90
+        },
+        {
+            "label": "UI/UX Design",
+            "value": 80
+        }
+    ],
+    "attributes": {
+        "Mentalidad de Producto": "Además de desarrollar funcionalidades, entiendo el impacto de cada decisión técnica en el ROI y en los objetivos de negocio del cliente",
+        "Liderazgo y Autonomía": "Capacidad demostrada para gestionar áreas técnicas (como en mi etapa de Responsable Front End), tomar decisiones críticas y guiar proyectos desde la concepción hasta el despliegue.",
+        "Pensamiento Crítico": "Capacidad para analizar requerimientos, identificar posibles cuellos de botella y proponer alternativas técnicas que optimicen costes o tiempos de entrega.",
+        "Adaptabilidad y Versatilidad": "Experiencia probada en la transición entre diferentes stacks tecnológicos y sectores (Fintech, E-commerce, Infraestructura), manteniendo siempre altos estándares de calidad"
+    }
+}

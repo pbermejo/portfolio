@@ -1,0 +1,15 @@
+---
+const { role, company, period, location, description, isRecent = true, showDescription = true } = Astro.props;
+---
+<div class="relative">
+  <span class={`absolute -left-[41px] top-2 w-4 h-4 rounded-full border-2 border-paper-light dark:border-charcoal-dark animate-fadeIn ${isRecent ? 'bg-paper-tint dark:bg-charcoal-tint' : 'bg-paper-mid dark:bg-charcoal-mid'}`}></span>
+  <div class="flex flex-col sm:flex-row sm:justify-between sm:items-baseline mb-2">
+    <h3 class={`text-xl font-semibold ${isRecent ? 'text-paper-dark dark:text-charcoal-light' : 'text-paper-mid dark:text-charcoal-mid'}`}>{role}</h3>
+    <span class="text-paper-mid dark:text-charcoal-mid font-medium">{period}</span>
+  </div>
+  <p class="text-sm text-paper-dark dark:text-charcoal-light mb-2">
+    {company} 
+    {location && <span class="text-paper-mid dark:text-charcoal-mid text-base font-normal">· {location}</span>}
+  </p>
+  {showDescription && description && <p class="text-paper-mid dark:text-charcoal-mid leading-relaxed">{description}</p>}
+</div>
